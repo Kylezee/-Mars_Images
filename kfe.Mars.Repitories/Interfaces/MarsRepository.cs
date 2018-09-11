@@ -134,19 +134,6 @@ namespace kfe.Mars.Repositories
 
         }
 
-        //private void CreateImageFile(Domain.Photos.Photos photos)
-        //{
-        //    using (StreamWriter sw = new StreamWriter("imageList.lst"))
-        //    {
-        //        foreach (Domain.Photos.PhotoDetail detail in photos.photos)
-        //        {
-        //            var outString = $"{detail.earth_date},{detail.img_src}";
-
-        //            sw.WriteLine(outString);
-        //        }
-        //    }
-        //}
-
         public async Task<bool> DownloadImages(string rover, Domain.Photos.Photos photos)
         {
 

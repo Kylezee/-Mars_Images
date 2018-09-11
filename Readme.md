@@ -35,12 +35,43 @@ Based on these questions, the following assumptions were made
   1 The documentation from the Mars API states that all requests will be limited to 5000 requests/hour.  
   2 Currently, with the provided test data, there are less than 20 requests being made using the test file.
 
+
+##Instructions to run
+For some reason when I configure the solution to launch kfe.Mars and kfe.Mars.Console, the settings do not save
+Therefore, afer you load the solution in Vs2017, please do the following:
+1  Right click on the solution in the solution explorer
+2  Select "Set Startup Projects..."
+3  Select Multiple Projects:
+4  Change kfe.Mars Action to Start
+5  Change kfe.Mars.Console Action to Start
+6  Press F5 to start the solution. 
+
+##How to Run Mars-Images
+Two windows should open:
+-  Command Prompt
+-  Browser that loads the Swagger Interface to the API
+
+Select the command prompt and follow the menus.  
+
+To validate the solution works as specified, press 5 to Retrieve Images by Text File
+Go to the kfe.Mars.Console/TestFile folder in the solution folder.  
+Simply drag "EarthDates.txt" to the command prompt.  Windows will paste the filename with Path
+Press enter.
+
+The images are being downlaoded to kfe.Mars/Images folder.  Folders are created for each rover.  then a date folder 
+is created within each rover folder.  The Images are downloaded by Rover/Image Date
+
+
+*That should do it*
+This was a fun little project.  
+
+
 ##Notes:
 * Visual Studio 2017 .Net Core 2
 
 ######kfe.Mars.Console
 
-Written .Net Core 
+Written using .Net Core Console Application
 
 The solution will launch both the kfe.Mars API and the kfe.Mars.Console application
 
@@ -56,7 +87,7 @@ A simple command line interface to execise parts of the kfe.Mars API.
 
 ######kfe.Mars
 
-Written is a .Net Core 2 project so it can be deployed on many platforms:
+Written as a .Net Core 2 web Api project so it can be deployed on many platforms:
 1 AWS
   - Docker Container
   - EC2 AMI
