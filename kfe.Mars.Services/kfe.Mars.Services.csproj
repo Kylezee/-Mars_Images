@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\kfe.Mars.Domain\kfe.Mars.Domain.csproj" />
+    <ProjectReference Include="..\kfe.Mars.Repitories\kfe.Mars.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

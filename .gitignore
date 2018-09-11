@@ -1,0 +1,21 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/kfe.Infrastructure/obj
+/kfe.Mars/obj
+/kfe.Mars.Console/obj
+/kfe.Mars.Contracts/obj
+/kfe.Mars.Domain/obj
+/kfe.Mars.Repitories/obj
+/kfe.Mars.Services/obj
+/kfe.Mars.Services.Tests/obj
+/kfe.Mars.Test.Framework/obj
+/kfe.Infrastructure/bin/Debug/netstandard2.0
+/kfe.Mars/bin/Debug/netcoreapp2.0
+/kfe.Mars.Console/bin/Debug/netcoreapp2.0
+/kfe.Mars.Contracts/bin/Debug/netstandard2.0
+/kfe.Mars.Domain/bin/Debug/netstandard2.0
+/kfe.Mars.Repitories/bin/Debug/netstandard2.0
+/kfe.Mars.Services/bin/Debug/netstandard2.0

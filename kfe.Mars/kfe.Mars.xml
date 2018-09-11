@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>kfe.Mars</name>
+    </assembly>
+    <members>
+        <member name="T:kfe.Mars.Controllers.MarsImagingController">
+            <summary>
+            Mars Imaging Controller
+            </summary>
+        </member>
+        <member name="M:kfe.Mars.Controllers.MarsImagingController.#ctor(Microsoft.Extensions.Logging.ILogger{kfe.Mars.Controllers.MarsImagingController},AutoMapper.IMapper,kfe.Mars.Services.Interfaces.IImagingServices)">
+            <summary>
+            Mars Imaging Controller Constructor
+            </summary>
+            <param name="logger"></param>
+            <param name="mapper"></param>
+            <param name="imagingServices"></param>
+        </member>
+        <member name="M:kfe.Mars.Controllers.MarsImagingController.GetImageListByEarthDate(kfe.Mars.Contracts.Constants.Rovers,System.DateTime)">
+            <summary>
+            Gets Mars Images by Earth date
+            </summary>
+            <param name="rover"></param>
+            <param name="earthDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:kfe.Mars.Controllers.MarsImagingController.GetImageListBySolDate(kfe.Mars.Contracts.Constants.Rovers,System.Int32)">
+             <summary>
+             Get Image List by Sol Date
+             </summary>
+            <param name="rover"></param>
+            <param name="solDate"></param>
+             <returns></returns>
+        </member>
+        <member name="M:kfe.Mars.Controllers.MarsImagingController.GetPhotoManifestByRover(kfe.Mars.Contracts.Constants.Rovers)">
+            <summary>
+            Get a manifest list of photos by Rover
+            </summary>
+            <param name="rover"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kfe.Mars.Mapper.MapperProfile">
+            <summary>
+            Auto Mapper between Dto and domain
+            </summary>
+        </member>
+        <member name="M:kfe.Mars.Mapper.MapperProfile.#ctor">
+            <summary>
+            constructor 
+            </summary>
+        </member>
+        <member name="T:kfe.Mars.Program">
+            <summary>
+            Entry Point
+            </summary>
+        </member>
+        <member name="M:kfe.Mars.Program.Main(System.String[])">
+            <summary>
+            Sub Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:kfe.Mars.Program.BuildWebHost(System.String[])">
+            <summary>
+            Setup webHost
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:kfe.Mars.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:kfe.Mars.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Logging.ILogger{kfe.Mars.Startup})">
+            <summary>
+            Startup Constructor
+            </summary>
+            <param name="configuration"></param>
+            <param name="hostingEnvironment"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:kfe.Mars.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:kfe.Mars.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider,Microsoft.Extensions.Logging.ILoggerFactory,Microsoft.Extensions.Options.IOptions{kfe.Infrastructure.Configuration.Models.SwaggerConfiguration})">
+            <summary>
+            Configure Stuff
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="provider"></param>
+            <param name="loggerFactory"></param>
+            <param name="swaggerSettings"></param>
+        </member>
+    </members>
+</doc>
